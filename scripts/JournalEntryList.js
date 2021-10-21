@@ -1,31 +1,14 @@
-/**
- *   FishList which renders individual fish objects as HTML
- */
- import { useJournalEntries } from "./JournalDataProvider.js"
- import { Journal } from "./JournalEntry.js"
 
- export const JournalList = () => {
+import { useJournalEntries } from "./JournalDataProvider.js";
+import { JournalEntryComponent } from "./JournalEntry.js";
 
-     const contentElement = document.querySelector("#journal-list")
-     const journals = useJournalEntries()
+const entryLog = document.querySelector('.journal-entries');
 
-     // Generate all of the HTML for all of the fish
-     let journalHTMLRepresentations = ""
-     for (const singleJournalObject of journals) {
-         /*
-             Invoke the Fish component function
-             and pass the current fish object as an argument.
-             Each time, add the return value to the
-             fishHTMLRepresentations variable with `+=`
-         */
-               journalHTMLRepresentations += Journal(singleJournalObject)
+export const EntryListComponent = () => {
 
-     }
+    const entries = useJournalEntries();
 
-     // Add a section, and all of the fish to the DOM
-     contentElement.innerHTML += `
-         <article class="journal-list">
-             ${journalHTMLRepresentations}
-         </article>
-     `
- }
+    for(let entry of entries) {
+        entryLog.innerHTML += JournalEntryComponent(entry);
+    }
+}

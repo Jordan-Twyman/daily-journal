@@ -7,62 +7,111 @@ button,
 input,
 select,
 textarea {
-	color: lightslategrey;
-	font-family: "Comfortaa", Arial, sans-serif;
-	font-size: 14px;
-	font-weight: bolder;
-	line-height: 1.5;
-	display: flex;
-	margin-right: 5%;
-	margin-top: 5%;
-	height: 100%;
-
+  color: #404040;
+  font-family: "Comfortaa", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
 }
 
-.form-mood-selector{
-	width: 10%;
-	
+.navbar {
+	background-color: black;
 }
 
-form {
-	margin-left: 15%;
-
-}
-
-fieldset {
-	border:1px solid white;
-	padding: 1em;
-	margin-right: 150px;
-	width: 360px;
-}
-#journal-list {
-	border: 1px solid white;
-	/* padding: 10px; */
-	display:flex;
-	;
-}
-
-
-#journalDate{
-	flex: 0 0 100%
-}
-
-textarea {
-	width: 100%;
-}
-
-main {
-	margin-left: 50%;
+#header-logo {
+  width: 150px;
+  height: 150px;
 }
 
 body {
-	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Computer-screen-code-glitch-animation-gif-background-free.gif/1200px-Computer-screen-code-glitch-animation-gif-background-free.gif");
-	background-position: relative;
-	background-size: cover;
+  background-color: lightgray;
+}
 
-  }
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.journal-date,
+.journal-concepts,
+.journal-entry,
+.journal-mood {
+  border: 2px solid darkgrey;
+  display: flex;
+  padding: 1em;
+}
+
+.journal-form {
+  margin: 1em 5em;
+}
+
+label {
+  padding: 0.5em;
+}
+
+/* Journal Entries */
+.journal-entries {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5em 5em;
+}
+
+.entry {
+  margin: 0 4em;
+  width: 33vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mood {
+  font-size: 2em;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer div {
+  margin: 1em;
+}
+
+#footer-logo {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+.github-logo {
+  font-size: 1.3em;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+img {
+
+	border-radius: 25%;
+	
+
+}
+

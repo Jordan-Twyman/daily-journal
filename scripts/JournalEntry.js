@@ -1,11 +1,31 @@
-export const Journal = (journal) => {
-    return `
-        <section class="journal-card">
-            <div class="journal__id">${journal.id}.</div>
-            <div class="journal__concept">${journal.concept}</div>
-            <div class="journal__date">${journal.date}</div>
-            <div class="journal__entry">${journal.entry}</div>
-            <div class="journal__mood">${journal.mood}</div>
-        </section>
+
+export const JournalEntryComponent = (entry) => {
+    if (entry.mood === 'Happy') {
+        return `
+        <article class="entry" id="entry-${entry.id}">
+        <i class="bi bi-emoji-smile mood"></i>
+            <h2>${entry.concept}</h2>
+            <p>${entry.date}</p>
+            <p>${entry.entry}</p>
+        </article>
     `
+    } else if (entry.mood === 'Ok') {
+        return `
+        <article class="entry" id="entry-${entry.id}">
+        <i class="bi bi-emoji-neutral mood"></i>
+            <h2>${entry.concept}</h2>
+            <p>${entry.date}</p>
+            <p>${entry.entry}</p>
+        </article>
+    `
+    } else {
+        return `
+        <article class="entry" id="entry-${entry.id}">
+        <i class="bi bi-emoji-frown mood"></i>
+            <h2>${entry.concept}</h2>
+            <p>${entry.date}</p>
+            <p>${entry.entry}</p>
+        </article>
+    `
+    }
 }

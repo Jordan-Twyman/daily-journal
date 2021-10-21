@@ -1,11 +1,9 @@
-import { Journal } from './JournalEntry.js'
-import { useJournalEntries } from './JournalDataProvider.js'
-import { JournalList } from './JournalEntryList.js'
+import { navbar } from "./navBar.js"
+import { journalForm } from "./journalForm.js";
+import { EntryListComponent } from "./JournalEntryList.js";
+import { footer } from "./footer.js"
 
-const allTheJournal = useJournalEntries()
-
-for (const journal of allTheJournal) {
-    console.log(journal)
-}
-
-JournalList()
+navbar();
+journalForm();
+EntryListComponent();
+footer();
