@@ -97,6 +97,13 @@
       "concept": "JSON & API",
       "mood": "happy",
       "id": 15
+    },
+    {
+      "entry": "deleting case note files in Glassdale PD",
+      "date": "2021-10-28",
+      "concept": "#fetch #delete #events",
+      "mood": "sad",
+      "id": 16
     }
   ]
 }

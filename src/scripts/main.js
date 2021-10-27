@@ -1,6 +1,6 @@
-import { JournalForm } from "./JournalForm.js";
+import { JournalForm } from "./journal/JournalForm.js";
 import { footer } from "./footer/footer.js"
-import { EntryListComponent } from "./JournalEntryList.js";
+import { EntryListComponent } from "./journal/JournalEntryList.js";
 
 
 

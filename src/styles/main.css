@@ -82,6 +82,9 @@ label {
   display: grid;
   margin: 25px;
   padding: 10px 25px;
+  background-image: url("../images/desk.jpg");
+  background-position: center;
+  background-size:cover;
 }
 
 .mood {
