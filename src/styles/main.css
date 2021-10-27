@@ -34,6 +34,7 @@ h6 {
 
 body {
   background-color: lightgray;
+  margin-bottom: 5%;
 }
 
 /* Form */
@@ -61,18 +62,16 @@ label {
 
 /* Journal Entries */
 .journal-entries {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 5em 5em;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1px;
 }
 
 .entry {
-  margin: 0 4em;
-  width: 33vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border: 1px solid black;
+  display: grid;
+  margin: 25px;
+  padding: 10px 25px;
 }
 
 .mood {
@@ -115,3 +114,6 @@ img {
 
 }
 
+option:first {
+  color: #999;
+}

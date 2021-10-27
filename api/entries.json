@@ -1,0 +1,74 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "date": "07/24/2025",
+      "concept": "HTML & CSS",
+      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+      "mood": "Happy"
+    },
+    {
+      "id": 2,
+      "date": "07/25/2025",
+      "concept": "FlexBox",
+      "entry": "We played flexbox games to learn about content placement.",
+      "mood": "Happy"
+    },
+    {
+      "id": 3,
+      "date": "07/26/2025",
+      "concept": "Javascript",
+      "entry": "We talked about how to import and export javascript files to main.",
+      "mood": "Frustrated"
+    },
+    {
+      "id": 4,
+      "date": "07/30/2025",
+      "concept": "BootStrap",
+      "entry": "We were given a new tool to enhance the CSS process.",
+      "mood": "Happy"
+    },
+    {
+      "id": 5
+    },
+    {
+      "dateOfEntry": "2021-10-27",
+      "concept": "JSON & API",
+      "mood": "happy",
+      "id": 6
+    },
+    {
+      "dateOfEntry": "2021-10-27",
+      "concept": "JSON & API",
+      "mood": "ok",
+      "id": 7
+    },
+    {
+      "dateOfEntry": "2021-10-27",
+      "concept": "JSON & API",
+      "mood": "ok",
+      "id": 8
+    },
+    {
+      "entry": "",
+      "date": "",
+      "concept": "",
+      "mood": "",
+      "id": 9
+    },
+    {
+      "entry": "mnbkiuhlkl",
+      "date": "2021-10-27",
+      "concept": "JSON & API",
+      "mood": "happy",
+      "id": 10
+    },
+    {
+      "entry": "sdgagas",
+      "date": "2021-10-27",
+      "concept": "JSON & API",
+      "mood": "happy",
+      "id": 11
+    }
+  ]
+}
