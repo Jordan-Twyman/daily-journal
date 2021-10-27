@@ -13,6 +13,10 @@ textarea {
   line-height: 1.5;
 }
 
+#saveEntries{
+  margin-top: 5px;
+}
+
 h1,
 h2,
 h3,
@@ -38,9 +42,12 @@ body {
 }
 
 /* Form */
-form {
+.journal-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 5em;
 }
 
 .journal-date,
@@ -50,10 +57,13 @@ form {
   border: 2px solid darkgrey;
   display: flex;
   padding: 1em;
+  width: 100%;
+  height: auto;
 }
 
-.journal-form {
-  margin: 1em 5em;
+form {
+  width: 750px;
+
 }
 
 label {
@@ -87,9 +97,11 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
+ 
 }
 
 footer div {
+  
   margin: 1em;
 }
 
@@ -107,13 +119,23 @@ a:link {
   text-decoration: none;
 }
 
-img {
-
-	border-radius: 25%;
-	
-
-}
 
 option:first {
-  color: #999;
+  color: rgb(199, 199, 199);
+}
+
+.footer-copyright {
+  color: white;
+}
+
+ #entry-text {
+  width: 75%
+}
+
+#concept-text {
+  width: 50%;
+}
+
+.mood-placeholder {
+  color: lightgray;
 }

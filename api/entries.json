@@ -69,6 +69,34 @@
       "concept": "JSON & API",
       "mood": "happy",
       "id": 11
+    },
+    {
+      "entry": "Today we discussed what snacks are great for enjoying while coding.",
+      "date": "2021-10-27",
+      "concept": "Coding Snacks",
+      "mood": "happy",
+      "id": 12
+    },
+    {
+      "entry": "I love beef jerkey",
+      "date": "2021-10-27",
+      "concept": "Snacks",
+      "mood": "happy",
+      "id": 13
+    },
+    {
+      "entry": "happy test",
+      "date": "2021-10-27",
+      "concept": "JSON & API",
+      "mood": "happy",
+      "id": 14
+    },
+    {
+      "entry": "date test",
+      "date": "2021-10-25",
+      "concept": "JSON & API",
+      "mood": "happy",
+      "id": 15
     }
   ]
 }

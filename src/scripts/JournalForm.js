@@ -36,7 +36,7 @@ document.querySelector("body").addEventListener("click", clickEvent => {
 export const JournalForm = () => {
     contentTarget.innerHTML = `
     <section class="journal-form">
-    <h2>Daily Journal</h2>
+    <h2 id="journal-heading">Daily Journal</h2>
         <form action="">
           <fieldset class="journal-date">
             <label for="journalDate">Date of entry</label>
@@ -58,10 +58,10 @@ export const JournalForm = () => {
           <fieldset class="journal-mood">
             <label for="journalMood">Mood for the day</label>
             <select name="" id="mood-text">
-              <option value="">Select Mood</option>
-              <option value="happy">Happy</option>
-              <option value="ok">Frustrated</option>
-              <option value="sad">Sad</option>
+              <option value="" id="mood-text" class="mood-placeholder" style="color:lightgray;">Select Mood</option>
+              <option value="happy" id="mood-text">Happy</option>
+              <option value="ok" id="mood-text">Frustrated</option>
+              <option value="sad" id="mood-text">Sad</option>
             </select>
           </fieldset>
         </form>

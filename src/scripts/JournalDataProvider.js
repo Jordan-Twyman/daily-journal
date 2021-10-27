@@ -16,11 +16,11 @@ let journal = []
 */
 export const useJournalEntries = () => {
     return journal.slice();
-    // const sortedByDate = journal.sort(
-    //     (currentEntry, nextEntry) =>
-    //         Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
-    // )
-    // return sortedByDate
+    const sortedByDate = journal.sort(
+        (currentEntry, nextEntry) =>
+            Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
+    )
+    return sortedByDate
 }
 
 export const getEntries = () => {

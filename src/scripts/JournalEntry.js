@@ -1,12 +1,12 @@
 
 export const JournalEntryComponent = (entry) => {
-    if (entry.mood === "Happy") {
+    if (entry.mood === 'Happy') {
         return `
         <article class="entry" id="entry">
         <i class="bi bi-emoji-smile mood"></i>
             <h2>${entry.concept}</h2>
             <p>${entry.mood}</p>
-            <p>${entry.date}</p>
+            <p>${new Date(entry.date).toLocaleDateString('en-US')}</p>
             <p>${entry.entry}</p>
         </article>
     `
@@ -16,7 +16,7 @@ export const JournalEntryComponent = (entry) => {
         <i class="bi bi-emoji-neutral mood"></i>
             <h2>${entry.concept}</h2>
             <p>${entry.mood}</p>
-            <p>${entry.date}</p>
+            <p>${new Date(entry.date).toLocaleDateString('en-US')}</p>
             <p>${entry.entry}</p>
         </article>
     `
@@ -26,7 +26,7 @@ export const JournalEntryComponent = (entry) => {
         <i class="bi bi-emoji-frown mood"></i>
             <h2>${entry.concept}</h2>
             <p>${entry.mood}</p>
-            <p>${entry.date}</p>
+            <p>${new Date(entry.date).toLocaleDateString('en-US')}</p>
             <p>${entry.entry}</p>
         </article>
     `
